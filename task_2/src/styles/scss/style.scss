@@ -1,0 +1,95 @@
+@import '../global/reset.scss';
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 80%;
+  margin-top: 50px;
+}
+
+.image-holder {
+  flex: 1 0 21%;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-holder:nth-child(4n + 1) .image {
+  border: 5px solid red;
+}
+
+.image {
+  height: 240px;
+  width: 240px;
+  border: 5px solid #a9a9a9;
+  border-radius: 50%;
+}
+
+.image-holder .image:hover {
+  border: 5px solid yellow;
+  transform: rotate(45deg);
+}
+
+.delete-image {
+  margin-top: 10px;
+  height: 18px;
+  width: 18px;
+}
+
+.images-count {
+  position: absolute;
+  top: 10px;
+  left: 250px;
+}
+
+.current-date {
+  position: absolute;
+  top: 10px;
+  left: 500px;
+}
+
+.background {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.big-image {
+  position: absolute;
+  height: 600px;
+  width: 900px;
+}
+
+.close-image {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  top: 153px;
+  left: 1410px;
+}
+
+.reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 150px;
+  margin: 30px 0 30px 0;
+  background-color: #66ff66;
+  border-radius: 10px;
+}
